@@ -1,0 +1,32 @@
+{%extends 'app1/base.html'%}
+{% load crispy_forms_tags %}
+{%block content%}
+
+<div class="col-md-8">
+  {%for message in messages%}
+      <div class="alert alert-{{message.tags}}">
+        {{message}}
+      </div>
+  {%endfor%}
+    <div class="content-section">
+        <div class="media">
+          <img class="rounded-circle account-img" src="{{user.profile.image.url}}">
+          <div class="media-body">
+            <h2 class="account-heading">{{user.username}}</h2>
+            <p class="text-secondary">{{user.email}}</p>
+          </div>
+        </div>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+          {%csrf_token%}
+         <fieldset class="form-group">
+          <legend class="border-bottom mb-4">Join Today</legend>
+          {{update_form|crispy}}
+          {{profile_form|crispy}}
+         </fieldset>
+          <input type="submit" value="update" class="btn btn-outline-info">
+  
+      </form>
+      </div>
+      
+      {%endblock%}

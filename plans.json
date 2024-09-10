@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Daily 100mbs",
+      "price": "5",
+      "speed": "3mbps",
+      "description": "fast"
+    },
+    {
+        "name": "Daily unlimited access",
+        "price": "80",
+        "speed": "5mbps",
+        "description": "fast"
+      },
+      {
+        "name": "Daily limited access",
+        "price": "50",
+        "speed": "3mbps",
+        "description": "fast"
+      },
+      {
+        "name": "Daily 1 gb",
+        "price": "20",
+        "speed": "4mbps",
+        "description": "moderate"
+      },
+      {
+        "name": "Weekly unlimited",
+        "price": "300",
+        "speed": "5mbps",
+        "description": "fast"
+      },
+      {
+        "name": "Weekly 2 gb",
+        "price": "50",
+        "speed": "3mbps",
+        "description": "moderate"
+      },
+      {
+        "name": "Weekly 5 gb",
+        "price": "80",
+        "speed": "4mbps",
+        "description": "moderate"
+      },
+      {
+        "name": "Monthly unlimited internet access",
+        "price": "1000",
+        "speed": "5mbps",
+        "description": "fast"
+      },
+      {
+        "name": "Monthly 30 gb",
+        "price": "50",
+        "speed": "5mbps",
+        "description": "fast"
+      }
+   
+  ]
+  

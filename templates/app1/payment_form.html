@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Initiate Payment</h1>
+    </header>
+    <div class="container">
+        <form method="post" action="{% url 'initiate_payment' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Pay</button>
+        </form>
+    </div>
+</body>
+</html>

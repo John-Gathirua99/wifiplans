@@ -1,0 +1,273 @@
+{%extends 'app1/base.html'%}
+{%load static%}
+
+{%block content%}
+<style>
+  /* @keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-moz-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}@-webkit-keyframes tawkMaxOpen{0%{opacity:0;transform:translate(0, 30px);;}to{opacity:1;transform:translate(0, 0px);}}#r9go45fuldqg1724305950573.open{animation : tawkMaxOpen .25s ease!important;}@keyframes tawkMaxClose{from{opacity: 1;transform:translate(0, 0px);;}to{opacity: 0;transform:translate(0, 30px);;}}@-moz-keyframes tawkMaxClose{from{opacity: 1;transform:translate(0, 0px);;}to{opacity: 0;transform:translate(0, 30px);;}}@-webkit-keyframes tawkMaxClose{from{opacity: 1;transform:translate(0, 0px);;}to{opacity: 0;transform:translate(0, 30px);;}}#r9go45fuldqg1724305950573.closed{animation: tawkMaxClose .25s ease!important} */
+ 
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+.mt-3 {
+    margin-top: 20px;
+}
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #67C762 solid; */
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    /* width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+    /* border: #67C762 solid; */
+}
+.mt-3 {
+    margin-top: 20px;
+}
+.mt-3 {
+    margin-top: 1rem !important;
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 724px) {
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+/*  */
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate
+}
+.card.animate {
+    transform: scale(1);
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 724px) {
+    .card {
+        width: 30%;
+    }
+}
+.card.animate {
+    transform: scale(1);
+}
+
+.card {
+    width: 100%;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+@media only screen and (min-width: 724px) {
+    .card{
+        width: 30%;
+    }
+}
+.card{
+    transform: scale(0.7);
+    transition: transform 1s ease-in-out;
+}
+
+.grid{
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    gap: 16px; /* Space between cards */
+    padding: 16px;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 480px) {
+    .grid{
+        flex-direction: column; /* Stack cards vertically on very small screens */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    .card{
+        width: 90%; /* Adjust width for small screens */
+    }
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: #2d4a53;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    color: var(--white);
+    overflow-x: hidden;
+    perspective: 4000;
+    perspective-origin: 50% 0%;
+}
+:root {
+    --size: 350px;
+    --layer: 20;
+}
+:root {
+    --green: #2d4a53;
+    --black: #0d1f23;
+    --grey: #6F6F6F;
+    --white: #afb3b7;
+    --dark-green: #132E35;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+}
+</style>
+<link rel="stylesheet" href="{%static 'app1/styles.css'%}">
+<body>
+
+ <div class="wrapper">
+ <!-- <div class="container mt-3" id="dateTime">Wed Aug 21 2024 11:04:15 PM</div> -->
+
+ 
+  <div class="container mt-3" id="glass-sec2" style="display: none;">
+      <div class="glass"></div>
+   
+  </div>
+  
+      <div class="card-container" >
+          <div class="grid">
+            {%for plan in plans%}
+            <div class="card animate">
+                <h2 class="card_title">{{plan.name}}</h2>
+                <p class="pricing"><span class="small">{{plan.price}} Ksh</span></p>
+                <!-- <i class="bi bi-clock"></i> -->
+                <hr>
+                <ul class="features">
+                    <li><i class="bi bi-phone"></i> <strong>1 Device</strong></li>
+                    <!-- <h6 class="card-subtitle mb-2 text-body-secondary">@ {{plan.price}} Ksh</h6> -->
+                <p class="card-text">{{plan.description}}</p>
+                <button type="button" class="btn btn-success"><a href="{%url 'plan_detail' plan.id %}" class="card-link" style="text-decoration: none;  color: black;">View plan</a></button>
+                </ul>
+                <!-- <button class="cta_btn" data-amount="10" data-name="5Hours 3MBps" data-devices="1" data-duration="5Hours">BUY</button> -->
+            </div>     
+         
+          {% endfor %}
+          </div>
+      </div>
+    </div>
+  <div class="container footer">
+      <h5>Contact us:</h5>
+      <div class="contact-info">
+          <p><i class="bi bi-phone"></i>0714-606-153</p>
+          <p><i class="bi bi-whatsapp"></i>0724-444-322</p>
+      </div>
+     
+  </div>
+</div>
+
+
+
+
+{%endblock%}
